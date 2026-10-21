@@ -1,6 +1,6 @@
 # Poojith S Menon — Portfolio Website
 
-Portfolio Link: portfolio-rho-ten-mdlm5i074i.vercel.app
+Portfolio Link: poojith-s-menon.vercel.app
 
 A personal portfolio website for **Poojith S Menon**, Full-Stack Developer and C++ & Embedded Systems Enthusiast.
 
