@@ -1,0 +1,35 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies
+node_modules/
+
+# Production build outputs
+dist/
+dist-ssr/
+
+# Environment and local files
+.env
+.env.local
+.env.*.local
+*.local
+
+# System & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Vercel
+.vercel/
+
+# Temporary / Scratch scripts
+test.py
+test_io.txt
+write_portfolio_files.py

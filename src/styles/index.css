@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root,
+  [data-theme="blue"] {
+    color-scheme: dark;
+    --primary-50: 240 249 255;
+    --primary-100: 224 242 254;
+    --primary-200: 186 230 253;
+    --primary-300: 125 211 252;
+    --primary-400: 56 189 248;
+    --primary-500: 14 165 233;
+    --primary-600: 2 132 199;
+    --primary-700: 3 105 161;
+    --primary-800: 7 89 133;
+    --primary-900: 12 74 110;
+    --primary-950: 8 47 73;
+    --primary-glow: rgba(56, 189, 248, 0.18);
+    --primary-glow-subtle: rgba(56, 189, 248, 0.08);
+  }
+
+  [data-theme="violet"] {
+    color-scheme: dark;
+    --primary-50: 250 245 255;
+    --primary-100: 243 232 255;
+    --primary-200: 233 213 255;
+    --primary-300: 216 180 254;
+    --primary-400: 192 132 252;
+    --primary-500: 168 85 247;
+    --primary-600: 147 51 234;
+    --primary-700: 126 34 206;
+    --primary-800: 107 33 168;
+    --primary-900: 88 28 135;
+    --primary-950: 59 7 100;
+    --primary-glow: rgba(192, 132, 252, 0.18);
+    --primary-glow-subtle: rgba(192, 132, 252, 0.08);
+  }
+
+  [data-theme="emerald"] {
+    color-scheme: dark;
+    --primary-50: 236 253 245;
+    --primary-100: 209 250 229;
+    --primary-200: 167 243 208;
+    --primary-300: 110 231 183;
+    --primary-400: 52 211 153;
+    --primary-500: 16 185 129;
+    --primary-600: 5 150 105;
+    --primary-700: 4 120 87;
+    --primary-800: 6 95 70;
+    --primary-900: 6 78 59;
+    --primary-950: 2 44 34;
+    --primary-glow: rgba(52, 211, 153, 0.18);
+    --primary-glow-subtle: rgba(52, 211, 153, 0.08);
+  }
+
+  [data-theme="amber"] {
+    color-scheme: dark;
+    --primary-50: 255 251 235;
+    --primary-100: 254 243 199;
+    --primary-200: 253 230 138;
+    --primary-300: 252 211 77;
+    --primary-400: 251 191 36;
+    --primary-500: 245 158 11;
+    --primary-600: 217 119 6;
+    --primary-700: 180 83 9;
+    --primary-800: 146 64 14;
+    --primary-900: 120 53 15;
+    --primary-950: 69 26 3;
+    --primary-glow: rgba(251, 191, 36, 0.18);
+    --primary-glow-subtle: rgba(251, 191, 36, 0.08);
+  }
+
+  [data-theme="rose"] {
+    color-scheme: dark;
+    --primary-50: 255 241 242;
+    --primary-100: 255 228 230;
+    --primary-200: 254 205 211;
+    --primary-300: 253 164 175;
+    --primary-400: 251 113 133;
+    --primary-500: 244 63 94;
+    --primary-600: 225 29 72;
+    --primary-700: 190 18 60;
+    --primary-800: 159 18 57;
+    --primary-900: 136 19 55;
+    --primary-950: 76 5 25;
+    --primary-glow: rgba(251, 113, 133, 0.18);
+    --primary-glow-subtle: rgba(251, 113, 133, 0.08);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #06080d;
+    color: #e2e8f0;
+    overflow-x: hidden;
+  }
+
+  /* Custom subtle scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #080b12;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1e293b;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(var(--primary-400));
+  }
+}
+
+/* Technical grid pattern background */
+.tech-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+}
+
+.tech-radial-glow {
+  background: radial-gradient(circle at 50% 0%, var(--primary-glow-subtle) 0%, transparent 60%);
+}
+
+.card-dark-surface {
+  background: linear-gradient(180deg, rgba(16, 22, 34, 0.8) 0%, rgba(10, 13, 20, 0.9) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.card-dark-surface:hover {
+  border-color: rgb(var(--primary-400) / 0.35);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

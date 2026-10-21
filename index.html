@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Poojith S Menon | Full-Stack Developer</title>
+    <meta name="description" content="Portfolio of Poojith S Menon, a Full-Stack Developer and C++ & Embedded Systems Enthusiast building practical software applications." />
+    <meta name="author" content="Poojith S Menon" />
+    <meta name="keywords" content="Poojith S Menon, Full-Stack Developer, Software Engineer, React, Node.js, Express, C++, Python, Embedded Systems, Portfolio" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://github.com/poojith007" />
+    <meta property="og:title" content="Poojith S Menon | Full-Stack Developer" />
+    <meta property="og:description" content="Portfolio of Poojith S Menon, a Full-Stack Developer and C++ & Embedded Systems Enthusiast building practical software applications." />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Poojith S Menon | Full-Stack Developer" />
+    <meta name="twitter:description" content="Portfolio of Poojith S Menon, a Full-Stack Developer and C++ & Embedded Systems Enthusiast building practical software applications." />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#06080d" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <!-- Avoid theme flash before mount -->
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('portfolio-theme');
+          if (saved) {
+            document.documentElement.setAttribute('data-theme', saved);
+          } else {
+            document.documentElement.setAttribute('data-theme', 'blue');
+          }
+        } catch(e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-dark-950 text-slate-100 font-sans antialiased selection:bg-primary-500/25 selection:text-primary-200 min-h-screen relative overflow-x-hidden">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
